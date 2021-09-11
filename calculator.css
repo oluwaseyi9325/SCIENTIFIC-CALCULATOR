@@ -1,0 +1,26 @@
+.cont-area{
+    background-color: grey;
+    border: 5px solid rgb(39, 31, 31);
+    width: 33% !important;
+    color: white !important;
+    border-radius: 34px;
+}
+@media screen and (max-width:1024px) {
+    .cont-area{
+        width: 95% !important;
+       
+    }
+    
+}
+/* @media screen and (min-width:00px) {
+    .cont-area{
+        width: 80% !important;
+        padding-left: -20px !important;
+       
+    }
+    
+} */
+.btn-down{
+    background-color: lightgray !important;
+    font-weight: bolder !important;
+}
