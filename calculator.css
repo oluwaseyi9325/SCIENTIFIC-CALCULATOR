@@ -1,13 +1,13 @@
 .cont-area{
     background-color: grey;
     border: 5px solid rgb(39, 31, 31);
-    width: 33% !important;
+    /* width: 33% !important; */
     color: white !important;
     border-radius: 34px;
 }
 @media screen and (max-width:1024px) {
     .cont-area{
-        width: 95% !important;
+        /* width: 95% !important; */
        
     }
     
