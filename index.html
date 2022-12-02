@@ -10,107 +10,112 @@
 </head>
 <body >
 
-  <div  class="container mt-4">
-      
-        <div class="text-center container cont-area text-white" >
-      <div id="resArea"   onload="resArea(event)" class="bg-white text-dark p-2 mt-3  shadow-lg" style="border-radius: 10px; height: 95px;">
-        <div  style="font-style: italic; font-size: 10px; text-transform: lowercase;">
-          <div id="disp" class="text- badge badge-info p-1" style="float:left; " >
-              status:-
-          </div>
-          <div style="clear: both;"></div>
+  <div class="container-fluid">
+    <div class="row">
+  <div class="col-lg-12 col-md-12 mx-auto">
+    <div  class=" mt-4">
+        
+      <div class="text-center  cont-area text-white" >
+    <div id="resArea"   onload="resArea(event)" class="bg-white text-dark p-2 mt-3  shadow-lg" style="border-radius: 10px; height: 95px;">
+      <div  style="font-style: italic; font-size: 10px; text-transform: lowercase;">
+        <div id="disp" class="text- badge badge-info p-1" style="float:left; " >
+            status:-
         </div>
-          <div  id="quest" style="float: left; font-size: 20px; font-weight: bolder;" class="mt-1 ml-4">
-           <!-- <span id="dat"></span> -->
-          
-          </div>
-          <div style="clear: both;"></div>
-          <div id="ans" class="mr-3 " style="float: right; font-size: 20px; font-weight: bolder;" >
-             Press power button <button class="badge badge-warning">ON</button> 
-        </div> 
-        <div style="clear: both;"></div>      
+        <div style="clear: both;"></div>
       </div>
-      <div style="border-radius: 10px;"><small><marquee behavior="" loop="2" direction=""><i>double click to get arc(tan,sin,cos)</i></marquee></small></div>
-
-            <div class="  pt-3 pb-3" style="border-radius: 10px; background-color: rgb(167, 154, 154); border-top: 5px solid;">
-
-            <div class="text-center text-white">
-                <button class="btn btn-secondary" onclick="round(event)">Round()</button>
-                
-                <!-- <button class="btn pl-3 pr-3 btn-success"><b>→</b></button>
-                <button class="btn pl-3 pr-3 btn-success"><b> ←</b></button> -->
-                <button class="btn pl-3 pt-0 pb-0" style="border: 3px solid  #808080; border-radius: 60px;  background-color: honeydew; font-size: 30px;"><span>→ </span>   <span class="" >←</span>
-                </button>
-
-                
-                <button class="btn pl-3 pr-3 btn-warning" onclick="onBtn(event)">ON</button>
-                <button class="btn pl-3 pr-3 btn-danger" onclick="offBtn(event)">OFF</button>
-            </div>
-            <div class="text-center mt-2"> 
-             <button class="btn pl-3 pr-3 btn-dark"  onclick="sin(event)">SIN</button>
-             <button class="btn pl-2 pr-3 btn-dark" onclick="cos(event)">COS</button>
-             <button class="btn pl-3 pr-2 btn-dark" onclick="tan(event)">TAN</button>
-             <button class="btn pl-2 pr-2 btn-dark" onclick="logBaseTwo(event)" >LOG<sub>2</sub></button>
-             <button class="btn pl-2 pr-2 btn-dark" onclick="logBaseTen(event)">LOG<sub>10</sub></button>
-            
-         </div>
-         <div class="text-center mt-2">
-             <button class="btn pl-3 pr-4 btn-dark" onclick="root()" >√</button>
-             <button class="btn pl-4 pr-4 btn-dark" onclick="squareOffTwo()">X<sup>2</sup></button>
-             <button class="btn pl-4 pr-3 btn-dark" onclick="squareOffAny()">X<sup>x</sup></button>
-             <button class="btn pl-2 pr-3 btn-dark" onclick="convertm(event)"><i><small>km-m</small></i></button>
-             <button class="btn pl-3 pr-3 btn-dark" onclick="ln()"><small>LN</small></button>
-         </div>
-         
-         <div class="text-center mt-2">
-             <button class="btn pl-4 pr-4 btn-dark" onclick="findPi()">π</button>
-             <button class="btn pl-4 pr-4 btn-dark" onclick="addNum('( ')">(</button>
-             <button class="btn pl-4 pr-4 btn-dark" onclick="addNum(')*')">)</button>
-             <button class="btn pl-2 pr-2 btn-dark" onclick="convertcm(event)"><i><small>km-cm</small></i></button>
-             <button class="btn pl-2 pr-3 btn-dark" onclick="addNum('%')">Mod</button>
-         </div>
-          </div>
-         
-    
-    
-          <div class=" pb-3 mb-3 bg-secondary" style="border-top: 5px solid white; border-radius: 10px; border-bottom: 5px solid;">
-            
-            <div class="text-center mt-3  ">
-              <button class="btn text-white pl-4 pr-4 btn-down" onclick="addNum(7)" >7</button>
-              <button class="btn text-white pl-4 pr-4 btn-down" onclick="addNum(8)"  >8</button>
-              <button class="btn text-white pl-4 pr-4 btn-down" onclick="addNum(9)"  >9</button>
-              <button class="btn text-white pl-3 pr-3 bg-danger " onclick="del()"  >DEL</button>
-              <button class="btn text-white pl-3 pr-3  bg-danger " onclick="clr(7)"  >AC</button>
-            </div>
-            <div class="text-center mt-3">
-              <button class="btn  text-white pl-4 pr-4 btn-down" onclick="addNum(4)"  >4</button>
-              <button class="btn text-white  pl-4 pr-4 btn-down" onclick="addNum(5)"  >5</button>
-              <button class="btn  text-white pl-4 pr-4 btn-down " onclick="addNum(6)" >6</button>
-              <button class="btn text-white pl-4 pr-4 btn-down" onclick="addNum('*')"  >x</button>
-              <button class="btn  text-white pl-4 pr-4 btn-down " onclick="addNum('/')"  >÷</button>
-            </div>
-            <div class="text-center mt-3">
-                <button class="btn text-white pl-4 pr-4 btn-down" onclick="addNum(1)"  >1</button>
-                <button class="btn text-white pl-4 pr-4 btn-down" onclick="addNum(2)"  >2</button>
-                <button class="btn text-white pl-4 pr-4 btn-down  " onclick="addNum(3)" >3</button>
-                <button class="btn text-white   pl-4 pr-4 btn-down " onclick="addNum('+')" >+</button>
-                <button class="btn text-white  pl-4 pr-4 btn-down" onclick="addNum('-')"  >-</button>
-            </div>
-            <div class="text-center mt-3 ">
-              <button class="btn  pl-4 pr-4 text-white btn-down" onclick="addNum(0)" >0</button>
-              <button class="btn   pl-4 pr-4 text-white btn-down" onclick="addNum('.')" >.</button>
-              <button class="btn  pl-3 pr-3 text-white btn-down" onclick="exp(event)"> exp</button>
-              <button class="btn text-white btn-down" onclick="collectAns()">ANS</button>
-              <button class="btn text-white  pl-4 pr-4 btn-down" onclick="solve()" >=</button>
-          </div>
-          </div>
-          
-  
+        <div  id="quest" style="float: left; font-size: 20px; font-weight: bolder;" class="mt-1 ml-4">
+         <!-- <span id="dat"></span> -->
+        
         </div>
-     
+        <div style="clear: both;"></div>
+        <div id="ans" class="mr-3 " style="float: right; font-size: 20px; font-weight: bolder;" >
+           Press power button <button class="badge badge-warning">ON</button> 
+      </div> 
+      <div style="clear: both;"></div>      
+    </div>
+    <div style="border-radius: 10px;"><small><marquee behavior="" loop="2" direction=""><i>double click to get arc(tan,sin,cos)</i></marquee></small></div>
+  
+          <div class="  pt-3 pb-3" style="border-radius: 10px; background-color: rgb(167, 154, 154); border-top: 5px solid;">
+  
+          <div class="text-center text-white">
+              <button class="btn btn-secondary" onclick="round(event)">Round()</button>
+              
+              <!-- <button class="btn pl-3 pr-3 btn-success"><b>→</b></button>
+              <button class="btn pl-3 pr-3 btn-success"><b> ←</b></button> -->
+              <button class="btn pl-3 pt-0 pb-0" style="border: 3px solid  #808080; border-radius: 60px;  background-color: honeydew; font-size: 30px;"><span>→ </span>   <span class="" >←</span>
+              </button>
+  
+              
+              <button class="btn pl-3 pr-3 btn-warning" onclick="onBtn(event)">ON</button>
+              <button class="btn pl-3 pr-3 btn-danger" onclick="offBtn()">OFF</button>
+          </div>
+          <div class="text-center mt-2"> 
+           <button class="btn pl-3 pr-3 btn-dark"  onclick="sin(event)">SIN</button>
+           <button class="btn pl-2 pr-3 btn-dark" onclick="cos(event)">COS</button>
+           <button class="btn pl-3 pr-2 btn-dark" onclick="tan(event)">TAN</button>
+           <button class="btn pl-2 pr-2 btn-dark" onclick="logBaseTwo(event)" >LOG<sub>2</sub></button>
+           <button class="btn pl-2 pr-2 btn-dark" onclick="logBaseTen(event)">LOG<sub>10</sub></button>
+          
+       </div>
+       <div class="text-center mt-2">
+           <button class="btn pl-3 pr-4 btn-dark" onclick="root()" >√</button>
+           <button class="btn pl-4 pr-4 btn-dark" onclick="squareOffTwo()">X<sup>2</sup></button>
+           <button class="btn pl-4 pr-3 btn-dark" onclick="squareOffAny()">X<sup>x</sup></button>
+           <button class="btn pl-2 pr-3 btn-dark" onclick="convertm(event)"><i><small>km-m</small></i></button>
+           <button class="btn pl-3 pr-3 btn-dark" onclick="ln()"><small>LN</small></button>
+       </div>
+       
+       <div class="text-center mt-2">
+           <button class="btn pl-4 pr-4 btn-dark" onclick="findPi()">π</button>
+           <button class="btn pl-4 pr-4 btn-dark" onclick="addNum('( ')">(</button>
+           <button class="btn pl-4 pr-4 btn-dark" onclick="addNum(')*')">)</button>
+           <button class="btn pl-2 pr-2 btn-dark" onclick="convertcm(event)"><i><small>km-cm</small></i></button>
+           <button class="btn pl-2 pr-3 btn-dark" onclick="addNum('%')">Mod</button>
+       </div>
+        </div>
+       
+  
+  
+        <div class=" pb-3 mb-3 bg-secondary" style="border-top: 5px solid white; border-radius: 10px; border-bottom: 5px solid;">
+          
+          <div class="text-center mt-3  " >
+            <button class="btn text-white pl-4 pr-4 btn-down" onclick="addNum(7)"  >7</button>
+            <button class="btn text-white pl-4 pr-4 btn-down" onclick="addNum(8)"  >8</button>
+            <button class="btn text-white pl-4 pr-4 btn-down" onclick="addNum(9)"  >9</button>
+            <button class="btn text-white pl-3 pr-3 bg-danger " onclick="del()"  >DEL</button>
+            <button class="btn text-white pl-3 pr-3  bg-danger " onclick="clr(7)"  >AC</button>
+          </div>
+          <div class="text-center mt-3">
+            <button class="btn  text-white pl-4 pr-4 btn-down" onclick="addNum(4)"  >4</button>
+            <button class="btn text-white  pl-4 pr-4 btn-down" onclick="addNum(5)"  >5</button>
+            <button class="btn  text-white pl-4 pr-4 btn-down " onclick="addNum(6)" >6</button>
+            <button class="btn text-white pl-4 pr-4 btn-down" onclick="addNum('*')"  >x</button>
+            <button class="btn  text-white pl-4 pr-4 btn-down " onclick="addNum('/')"  >÷</button>
+          </div>
+          <div class="text-center mt-3">
+              <button class="btn text-white pl-4 pr-4 btn-down" onclick="addNum(1)"  >1</button>
+              <button class="btn text-white pl-4 pr-4 btn-down" onclick="addNum(2)"  >2</button>
+              <button class="btn text-white pl-4 pr-4 btn-down  " onclick="addNum(3)" >3</button>
+              <button class="btn text-white   pl-4 pr-4 btn-down " onclick="addNum('+')" >+</button>
+              <button class="btn text-white  pl-4 pr-4 btn-down" onclick="addNum('-')"  >-</button>
+          </div>
+          <div class="text-center mt-3 ">
+            <button class="btn  pl-4 pr-4 text-white btn-down" onclick="addNum(0)" >0</button>
+            <button class="btn   pl-4 pr-4 text-white btn-down" onclick="addNum('.')" >.</button>
+            <button class="btn  pl-3 pr-3 text-white btn-down" onclick="exp(event)"> exp</button>
+            <button class="btn text-white btn-down" onclick="collectAns()">ANS</button>
+            <button class="btn text-white  pl-4 pr-4 btn-down" onclick="solve()" >=</button>
+        </div>
+        </div>
+        
+  
+      </div>
+   
   
   </div>
-  
+  </div>
+    </div>
+   </div>
     
 
 
